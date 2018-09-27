@@ -1,0 +1,28 @@
+{
+  "name": "mongo-assignment",
+  "version": "1.0.0",
+  "description": "news scraper for comment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dan-homoncik/mongo-assignment.git"
+  },
+  "author": "Dan Homoncik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dan-homoncik/mongo-assignment/issues"
+  },
+  "homepage": "https://github.com/dan-homoncik/mongo-assignment#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.2.18",
+    "request": "^2.88.0"
+  }
+}
