@@ -1,0 +1,33 @@
+.jumbotron {
+  margin-top: 30px;
+}
+
+body{
+	background-color: #fa6e6e;
+  background: url("/assets/img/red-design-bg.png")
+}
+.logo{
+  width: 350px;
+}
+
+.subtitle {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.btn-primary {
+  background-color: #fa6e6e;
+  color: white !important;
+}
+
+.note-item-list {
+  padding: 5px;
+}
+.champions{
+  margin-top: 30px;
+}
+#champ-logo{
+  width: 30%;
+}
+
+

@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Toronto FC Topic Scraper</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <div class="navbar-nav mr-auto">
+      <a class="nav-item nav-link active" href="/">Home</a>
+      <a class="nav-item nav-link" href="/saved">Saved posts</a>
+      <a class="btn btn-danger scrape-new">Get new posts</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container jumbotron">
+  <img class = "img-fluid logo" src = "/assets/img/tfcbadge.png">
+  <p class="subtitle">All of the latest talk on Toronto FC!</p>
+  <p>Your 2017 MLS Cup Champions</p>
+</div>
+
+
+<div class="container article-container">
+  <h3>Posts</h3>
+  {{#each articles}}
+    <div class="card bg-light mb-3">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <a href="https://old.reddit.com{{{link}}}" class="card-link" target="_blank">View article on r/tfc</a>
+        <br>
+        <a data-articleId="{{_id}}" class="btn btn-primary save-btn">Save Post</a>
+      </div>
+    </div>
+  {{/each}}
+</div>
